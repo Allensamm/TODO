@@ -1,0 +1,42 @@
+
+.hamburger div {
+  width: 40px;
+  height: 4px;
+  background: crimson;
+  margin-bottom: 4px;
+}
+
+
+
+.blur {
+  background: #0000004f;
+  z-index: -1;
+}
+
+.inputsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes{
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-top: 3px solid rgb(234, 179, 8);
+  overflow-wrap:break-word;
+}
+
+ul{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+li{
+  list-style-type: disc;
+  color: white;
+
+}
+#editor ul li{
+  list-style-type: disc;
+  color: white;
+}

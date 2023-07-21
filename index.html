@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black">
+    <nav class="flex justify-between mx-5">
+        <div class="cursor-pointer">
+            <h1 class="text-4xl text-gray-400 add">+</h1>
+        </div>
+        <div class="setting cursor-pointer">
+            <h1 class="text-2xl">⚙</h1>
+        </div>
+        
+    </nav>
+    <header class="mx-5">
+        <h1 class="text-3xl text-white">Notes</h1>
+    </header>
+    <div class="searchbar mx-5">
+        <input name="search" id="search" placeholder="Search"
+            class="bg-gray-800 max-md:w-full h-10 text-white outline-none px-2">
+        </div>
+        <div class="todolistcontainer mt-6">
+            <ul class="list"></ul>
+        </div>
+
+        <!-- modal -->
+        <div id="modal" class="modal hidden mx-5">
+            <div class="heading bg-yellow-500 w-full h-10"></div>
+            <div id="editor" class="TODO bg-slate-800 h-60 w-full outline-none text-white px-2" contenteditable="true">
+            </div>
+            <div class="text-white flex relative -top-6 gap-6">
+                <div>
+                    <img class="" id="boldBtn" width="20" height="20"
+                        src="https://img.icons8.com/metro/26/FFFFFF/bold.png" alt="bold" />
+                </div>
+
+                <div>
+                    <img id="italicBtn" width="20" height="20"
+                        src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/italic.png" alt="italic" />
+
+                </div>
+                <div>
+                    <img width="20" height="20" id="bulletedBtn"
+                        src="https://img.icons8.com/ios-glyphs/30/FFFFFF/overview-pages-3--v1.png"
+                        alt="overview-pages-3--v1" />
+
+                </div>
+                <div>
+                    <img id="numberedBtn" width="20" height="20"
+                        src="https://img.icons8.com/material-rounded/24/FFFFFF/numbered-list.png" alt="numbered-list" />
+                </div>
+                <button type="button" class="addtodo bg-yellow-500 w-16 rounded-sm">Add</button>
+            </div>
+
+
+
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
