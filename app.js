@@ -42,7 +42,6 @@ document.querySelector(".add").addEventListener("click", () => {
     <div class="text-white px-5 todo flex justify-between">
       <div>${userwrite.innerHTML}</div>
       <div>
-        <button class='edit'>🖊</button>
         <button class="delete">🗑</button>
       </div>
     </div>
@@ -69,7 +68,6 @@ document.querySelector(".add").addEventListener("click", () => {
       <div class="text-white px-5 todo flex justify-between">
       <div>${userwrite.innerHTML}</div>
       <div>
-        <button class='edit'>🖊</button>
         <button onclick="deleteParentElement(this)" class="delete">🗑</button>
       </div>
     </div>
@@ -120,7 +118,6 @@ function getTodos() {
       <div class="text-white px-5 todo flex justify-between">
         <div class="individual">${todo}</div>
         <div>
-          <button class='edit'>🖊</button>
           <button onclick="deleteParentElement(this) " class="delete">🗑</button>
         </div>
       </div>
